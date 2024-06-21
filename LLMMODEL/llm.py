@@ -20,7 +20,6 @@ def generate_response(prompt):
     return response.choices[0].message['context'].strip() #retrieving the very first/best response of the model to the prompt
 
 
-
 prompt = "What is the capital of France?"
 response = generate_response(prompt)
 print(response)
